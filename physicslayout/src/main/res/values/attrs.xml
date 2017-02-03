@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Physics">
+
+        <!-- Custom -->
+        <!--Turn on and off physics-->
+        <attr name="physics" format="boolean" />
+        <!--Define if the view should have outer boundaries-->
+        <attr name="bounds" format="boolean" />
+        <!--Set the width of the boundaries-->
+        <attr name="boundsSize" format="dimension" />
+        <!--Turn on and off flinging-->
+        <attr name="fling" format="boolean" />
+        <!--Set the number of pixels per meter-->
+        <attr name="pixelsPerMeter" format="float" />
+
+        <!-- World -->
+        <!--Set the number of velocity iterations-->
+        <attr name="velocityIterations" format="integer" />
+        <!--Set the number of position iterations-->
+        <attr name="positionIterations" format="integer" />
+        <!--Set the X component of gravity-->
+        <attr name="gravityX" format="float" />
+        <!--Set the Y component of gravity-->
+        <attr name="gravityY" format="float" />
+
+    </declare-styleable>
+
+    <declare-styleable name="Physics_Layout">
+        <!-- Custom -->
+        <attr name="layout_shape" format="enum">
+            <enum name="rectangle" value="0" />
+            <enum name="circle" value="1" />
+        </attr>
+        <attr name="layout_circleRadius" format="dimension" />
+        <!-- BodyDef -->
+        <attr name="layout_bodyType" format="enum">
+            <enum name="statik" value="0" />
+            <enum name="kinematic" value="1" />
+            <enum name="dynamic" value="2" />
+        </attr>
+        <attr name="layout_fixedRotation" format="boolean" />
+        <!-- FixtureDef -->
+        <attr name="layout_friction" format="float" />
+        <attr name="layout_restitution" format="float" />
+        <attr name="layout_density" format="float" />
+
+    </declare-styleable>
+
+</resources>
